@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Blog</title>
+    <link rel="stylesheet" href="bstyle.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="header-content">
+                    <h1 class="site-title">Minimal Blog</h1>
+                    <p class="site-tagline">Thoughts, elegantly expressed</p>
+                    <nav>
+                        <a href="#" class="nav-home active">Home</a>
+                        <a href="#" class="nav-about">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main id="content">
+            <div class="loading">Loading content...</div>
+        </main>
+
+        <!-- Static sections that appear on home page -->
+        <div id="static-sections">
+            <div class="content-wrapper">
+                <section class="featured-posts">
+                    <h2>🔥 Featured Posts</h2>
+                    <div class="post-list" id="featured-posts-list">
+                        <!-- Featured posts will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <section class="categories">
+                    <h2>📂 Categories</h2>
+                    <div class="category-list">
+                        <a href="#" data-category="writing">Writing</a>
+                        <a href="#" data-category="productivity">Productivity</a>
+                        <a href="#" data-category="design">Design</a>
+                        <a href="#" data-category="technology">Technology</a>
+                        <a href="#" data-category="lifestyle">Lifestyle</a>
+                    </div>
+                </section>
+
+                <section class="newsletter">
+                    <h2>📬 Subscribe to Our Newsletter</h2>
+                    <p>Get the latest posts delivered straight to your inbox.</p>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </section>
+
+                <section class="author-section">
+                    <h2>👨‍💻 About the Author</h2>
+                    <p>Hi, I'm Vinoth — I write about technology, design, and the art of minimalism.
+                        My goal is to inspire readers with clear, thoughtful insights.</p>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <div class="header-container">
+                <p>&copy; 2025 Minimal Blog. Crafted with simplicity and passion.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="bscript.js"></script>
+</body>
+</html>
